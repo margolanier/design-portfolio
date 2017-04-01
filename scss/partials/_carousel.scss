@@ -1,0 +1,37 @@
+.slider {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.slick-slide {
+	margin: 10px 20px;
+	
+	img {
+		width: 100%;
+		transition: all 0.5s ease;
+		transform: scale(0.9);
+	}
+}
+
+.slick-prev {
+	left: 0;
+}
+
+.slick-next {
+	right: 0;
+}
+
+.slick-prev:before, .slick-next:before {
+	color: $yellow;
+}
+
+.slick-dotted {
+	&.slick-slider {
+		margin-bottom: 50px;
+	}
+	
+	.slick-current img {
+		transition: all 0.5s ease;
+		transform: scale(1.1);
+	}
+}
