@@ -4,8 +4,21 @@ section {
 	min-height: 100px;
 	padding: 1em;
 	
-	h2 {
+	.section-content {
+		max-width: 700px;
+		margin: auto;
+	}
+	
+	.section-id {
+		width: 40px;
+		border-bottom: 2px solid $yellow;
+		font-size: 0.8em;
+		font-weight: 700;
+	}
+	
+	h2.section-header {
 		font-size: 1.5em;
+		margin-top: 0.25em;
 	}
 	
 	&.melon-bg {

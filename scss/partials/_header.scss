@@ -1,0 +1,40 @@
+header {
+	height: 300px;
+	padding: 2em 1em 1em 1em;
+	position: relative;
+	background-color: $melon;
+	background: linear-gradient(120deg, #F12A51, $melon 60%, #FFA1A5);
+	text-align: center;
+	
+	#header-content {
+		margin: auto;
+		display: inline-block;
+		text-align: right;
+	}
+	
+	h1 {
+		color: white;
+		font-size: 2em;
+		margin: 0;
+		
+		@include breakpoint($small) {
+			font-size: 3em;
+		}
+		
+		span {
+			font-weight: 300;
+		}
+	}
+	
+	p {
+		font-weight: 700;
+		margin: 0;
+		padding-bottom: 5px;
+	}
+	
+	.label-border {
+		width: 40px;
+		border-top: 2px solid $yellow;
+		float: right;
+	}
+}

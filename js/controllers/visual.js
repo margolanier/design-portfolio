@@ -1,6 +1,9 @@
 module.exports = {
 	name: 'Visual',
 	task($scope, App) {
-		//console.log('visual');
+		
+		$scope.id = '04';
+		$scope.header = 'Visual';
+		
 	},
 };

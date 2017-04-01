@@ -1,6 +1,9 @@
 module.exports = {
 	name: 'Process',
 	task($scope, App) {
-		//console.log('process');
+		
+		$scope.id = '01';
+		$scope.header = 'User Experience Lifecycle';
+		
 	},
 };

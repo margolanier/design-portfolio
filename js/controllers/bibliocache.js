@@ -1,6 +1,9 @@
 module.exports = {
 	name: 'Bibliocache',
 	task($scope, App) {
-		//console.log('bibliocache');
+		
+		$scope.id = '02';
+		$scope.header = 'Bibliocache';
+		
 	},
 };

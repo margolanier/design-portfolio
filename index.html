@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Language" content="en">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
@@ -14,19 +14,50 @@
 
 <body ng-app="DesignPortfolio">
 	<header>
-		<h1><span>Margo</span>Lanier.</h1>
-		<p>UX designer and front-end developer.</p>
-		
+		<div id="header-content">
+			<h1><span>Margo</span>Lanier</h1>
+			<p>UX Designer/Developer</p>
+			<div class="label-border"></div>
+		</div>
+
 		<div class="arrow">
 			<div class="arrow-down">
 				<img class="polyL" src="assets/polyL.png"><img class="polyR" src="assets/polyR.png">
 			</div>
 		</div>
+		
 	</header>
 
-	<section ng-controller="Process">	
-		<h2>My Design Process</h2>
-		here is some intro stuff
+	<section ng-controller="Process">
+		<div class="section-content" id="process">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			<p>How I approach the process</p>
+			
+			<div class="stages">
+				<div class="stage">
+					<img class="process-icon" src="assets/discovery.png">
+					<h3>Discovery</h3>
+				</div>
+
+				<div class="stage">
+					<img class="process-icon" src="assets/exploration.png">
+					<h3>Exploration</h3>
+				</div>
+
+				<div class="stage">
+					<img class="process-icon" src="assets/design.png">
+					<h3>Design</h3>
+				</div>
+
+				<div class="stage">
+					<img class="process-icon" src="assets/evaluation.png">
+					<h3>Evaluation</h3>
+				</div>
+			</div>
+			
+			
+		</div>
 	</section>
 	
 	<section ng-controller="Bibliocache" class="teal-bg">
@@ -36,8 +67,11 @@
 			</div>
 		</div>
 		
-		<h2>bib</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus venenatis gravida. Vivamus metus lorem, pulvinar quis nisi eu, gravida pellentesque mi. Aliquam ornare tincidunt fringilla. Pellentesque convallis, justo non porta vestibulum, dolor dolor viverra justo, ut hendrerit lorem nisl a justo. Quisque mattis, dui a vehicula consectetur, nibh sem feugiat quam, a pulvinar libero erat id risus. Praesent eu ultricies diam, vel lacinia lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam laoreet nulla eget varius vehicula. Nam lobortis urna et dignissim commodo. In at tincidunt ligula, at ultricies metus. Mauris elementum tempus semper.</p>
+		<div class="section-content">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus venenatis gravida. Vivamus metus lorem, pulvinar quis nisi eu, gravida pellentesque mi. Aliquam ornare tincidunt fringilla. Pellentesque convallis, justo non porta vestibulum, dolor dolor viverra justo, ut hendrerit lorem nisl a justo. Quisque mattis, dui a vehicula consectetur, nibh sem feugiat quam, a pulvinar libero erat id risus. Praesent eu ultricies diam, vel lacinia lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam laoreet nulla eget varius vehicula. Nam lobortis urna et dignissim commodo. In at tincidunt ligula, at ultricies metus. Mauris elementum tempus semper.</p>
+		</div>
 		
 		<div class="arrow-grey">
 			<div class="arrow-down">
@@ -47,14 +81,11 @@
 	</section>
 
 	<section ng-controller="Blogads" class="grey-bg">
-		<div class="arrow-grey">
-			<div class="arrow-up">
-				<img class="polyL" src="assets/polyL_2_grey.png"><img class="polyR" src="assets/polyR_2_grey.png">
-			</div>
+		<div class="section-content">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			here is some blogads stuff
 		</div>
-		
-		<h2>blogads</h2>
-		here is some blogads stuff
 	</section>
 	
 	<section ng-controller="Visual">
@@ -64,8 +95,11 @@
 			</div>
 		</div>
 		
-		<h2>foodmusicbeer</h2>
-		here is some events stuff
+		<div class="section-content">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			music food beer. here is some events stuff
+		</div>
 	</section>
 
 	<footer>

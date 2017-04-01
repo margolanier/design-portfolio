@@ -15,7 +15,7 @@ $large: 1050px;
 
 @mixin header-font {
     font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	color: $font-color;
 }
 
@@ -25,6 +25,9 @@ $large: 1050px;
 }
 
 @import 'partials/main';
+@import 'partials/header';
+@import 'partials/footer';
 @import 'partials/arrow';
 @import 'partials/section';
+@import 'partials/process';
 
