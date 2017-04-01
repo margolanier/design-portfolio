@@ -1,0 +1,30 @@
+@import '../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+// @include foundation-grid;
+
+$grey: #EAEAEA;
+$teal: #3FB8AF;
+$melon: #f16369;
+$yellow: #FFCB05;
+$font-color: #1e1e1e;
+
+$small: 450px;
+$medium: 750px;
+$large: 1050px;
+
+@mixin header-font {
+    font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: $font-color;
+}
+
+@mixin body-font {
+    font-family: 'Open Sans', sans-serif;
+	color: $font-color;
+}
+
+@import 'partials/main';
+@import 'partials/arrow';
+@import 'partials/section';
+

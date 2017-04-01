@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    background: white;
+	margin: 0;
+	padding: 0;
+	color: $font-color;
+	@include body-font;
+	overflow-x: hidden;
+}
+
+h1, h2, h3 {
+	@include header-font;
+	text-transform: uppercase;
+}
+
+p {
+	@include body-font;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+header {
+	height: 400px;
+	padding: 2em;
+	position: relative;
+	background-color: $melon;
+	background: linear-gradient(120deg, #F12A51, $melon 60%, #FFA1A5);
+	
+	h1 {
+		color: white;
+		font-size: 3em;
+		span {
+			font-weight: 300;
+		}
+	}
+	
+	p {
+		color: white;
+	}
+}
+
+footer {
+	background-color: $melon;
+	
+	p {
+		color: white;
+	}
+}
+

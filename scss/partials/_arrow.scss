@@ -1,0 +1,65 @@
+/* ARROW SECTION DIVIDERS */
+.arrow, .arrow-grey {
+	margin-bottom: 100px;
+}
+
+.arrow-down, .arrow-up {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	
+	.polyL {
+		width: 75%;
+		height: 50px;
+	}
+	.polyR {
+		width: 25%;
+		height: 50px;
+	}
+	
+	@include breakpoint($small) {
+		.polyL, .polyR {
+			height: 100px;
+		}
+	}
+}
+
+.arrow-down {
+	bottom: 0;
+	
+	.polyL {
+		width: 75%;
+	}
+	.polyR {
+		width: 25%;
+	}
+	
+	@include breakpoint($small) {
+		.polyL {
+			width: 70%;
+		}
+		.polyR {
+			width: 30%;
+		}
+	}
+}
+
+.arrow-up {
+	top: 0;
+	
+	.polyL {
+		width: 25%;
+	}
+	.polyR {
+		width: 75%;
+	}
+	
+	@include breakpoint($small) {
+		.polyL {
+			width: 30%;
+		}
+		.polyR {
+			width: 70%;
+		}
+	}
+}

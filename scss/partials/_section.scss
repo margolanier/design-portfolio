@@ -1,0 +1,28 @@
+/* MAIN SECTIONS */
+section {
+	position: relative;
+	min-height: 100px;
+	padding: 1em;
+	
+	h2 {
+		font-size: 1.5em;
+	}
+	
+	&.melon-bg {
+		background-color: $melon;
+		color: white;
+	}
+	
+	&.teal-bg {
+		background-color: $teal;
+		color: white;
+	}
+	
+	&.yellow-bg {
+		background-color: $yellow;
+	}
+	
+	&.grey-bg {
+		background-color: $grey;
+	}
+}
