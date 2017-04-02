@@ -1,0 +1,30 @@
+.strategy-images {
+	text-align: center;
+	margin-bottom: 50px;
+	
+	img {
+		margin: 0;
+		margin-bottom: 20px;
+		
+		&.border {
+			border: 2px solid $melon;
+		}
+	}
+	
+	@include breakpoint($medium) {
+		display: flex;
+		justify-content: center;
+		
+		img {
+			margin: 0 20px;
+			max-width: 300px;
+		}
+	}
+	
+	@include breakpoint($large) {
+		img {
+			width: 100%;
+			max-width: none;
+		}
+	}
+}
