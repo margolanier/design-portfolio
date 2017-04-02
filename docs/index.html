@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+    <title>Margo Lanier | Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Language" content="en">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="DesignPortfolio">
+	<header>
+		<div id="header-content">
+			<h1><span>Margo</span>Lanier</h1>
+			<p>UX Designer/Developer</p>
+			<div class="label-border"></div>
+		</div>
+
+		<div class="arrow">
+			<div class="arrow-down">
+				<img class="polyL" src="assets/polyL.png"><img class="polyR" src="assets/polyR.png">
+			</div>
+		</div>
+
+			</header>
+
+	<section ng-controller="Process">
+		<div class="section-content" id="process">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			<p>User Experience (UX) Design is a collaborative and versatile process, but these foundational elements are present in my approach to each project.</p>
+
+						<div class="stages">
+				<div class="stage">
+					<div><img class="process-icon" src="assets/discovery.png"></div>
+					<h3>Discovery</h3>
+					<!--<p>Client and industry research, defining the needs, persona creation and user stories</p>-->
+				</div>
+
+				<div class="stage">
+					<div><img class="process-icon" src="assets/exploration.png"></div>
+					<h3>Exploration</h3>
+					<!--<p>Content structure/strategy, use cases and user flows, information architecture, sketching, site maps, layout</p>-->
+				</div>
+
+				<div class="stage">
+					<div><img class="process-icon" src="assets/design.png"></div>
+					<h3>Design</h3>
+					<!--<p>Wireframing, interactions, visual design, mockups, style guide, collaborating with developers</p>-->
+				</div>
+
+				<div class="stage">
+					<div><img class="process-icon" src="assets/evaluation.png"></div>
+					<h3>Evaluation</h3>
+					<!--<p>Quality control, usability testing, monitoring site analytics</p>-->
+				</div>
+			</div>
+
+
+								</div>
+	</section>
+
+		<section ng-controller="Work" class="teal-bg">
+		<div class="arrow">
+			<div class="arrow-up">
+				<img class="polyL" src="assets/polyL_2.png"><img class="polyR" src="assets/polyR_2.png">
+			</div>
+		</div>
+
+				<div class="section-content">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			<p>Here are a few mockups of some of my designs in the wild.  I have worked with a wide range of clients including B2B and B2C, and designed sites from conservative and minimal to trendy and image-heavy.  Usability is the focus of my designs.
+		</div>	
+
+					<section class="portfolio slider">
+			<div>
+				<img src="assets/core_home.png">
+			</div>
+			<div>
+				<img src="assets/orthokristy.png">
+			</div>
+			<div>
+				<img src="assets/final.png">
+			</div>
+			<div>
+				<img src="assets/parekh_grid.png">
+			</div>
+			<div>
+				<img src="assets/bibliocache.png">
+			</div>
+		</section>
+
+				<div class="arrow-grey">
+			<div class="arrow-down">
+				<img class="polyL" src="assets/polyL_grey.png"><img class="polyR" src="assets/polyR_grey.png">
+			</div>
+		</div>
+	</section>
+
+	<section ng-controller="Usability" class="grey-bg">
+		<div class="section-content">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			<p>I capture user behavior (i.e. common tasks, time to complete tasks, site search, navigation, user flow, and touch gestures on mobile devices) by recording users while they interact with the interface.  This allows me to target the pain points and make improvements to the design. </p>
+			<div class="user-testing">
+				<img class="phone-screen" src="assets/biblio_address.gif">
+				<img class="phone-screen" src="assets/biblio_book.gif">
+			</div>
+			<p class="caption">1. A user who has location-sharing turned off on his phone enters his address manually in an autocomplete input box.</p>
+			<p class="caption">2. User location is updated on the map in real-time as the user walks to a destination and is prompted to download a digital book.</p>
+		</div>
+	</section>
+
+		<section ng-controller="Strategy">
+		<div class="arrow-grey">
+			<div class="arrow-up">
+				<img class="polyL" src="assets/polyL_2_grey.png"><img class="polyR" src="assets/polyR_2_grey.png">
+			</div>
+		</div>
+
+				<div class="section-content">
+			<p class="section-id">{{ id }}</p>
+			<h2 class="section-header">{{ header }}</h2>
+			<p>A successful design requires research, listening, planning, and testing.  When crafting a design, I prioritize the information architecture and intended audience.  That way the clients and users understand and navigate the site easily, even with large amounts of content.</p>
+			<div class="strategy-images">
+				<img src="assets/info-arch.png">
+				<img class="border" src="assets/sitemap.png">
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<section>
+			<div class="section-content">
+				<p><a href="https://www.linkedin.com/in/margolanier" target="blank" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i> Connect with me on LinkedIn</a><br>
+				<a href="https://github.com/margolanier" target="blank" title="github"><i class="fa fa-github" aria-hidden="true"></i> I also build websites</a></p>
+				<p>Site design 2017 &copy; Margo Lanier</p>
+			</div>
+		</section>
+	</footer>
+</body>
+
+</html>
