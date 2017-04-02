@@ -1,0 +1,23 @@
+.user-testing {
+	text-align: center;
+	
+	.phone-screen {
+		margin: 0;
+		margin-bottom: 20px;
+		border: 2px solid $body-font-color;
+	}
+	
+	@include breakpoint($medium) {
+		display: flex;
+		justify-content: center;
+		
+		.phone-screen {
+			margin: 0 20px;
+		}
+	}
+}
+
+.caption {
+	font-style: italic;
+	font-size: 0.9em;
+}

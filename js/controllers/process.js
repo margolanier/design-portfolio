@@ -3,7 +3,7 @@ module.exports = {
 	task($scope, App) {
 		
 		$scope.id = '01';
-		$scope.header = 'User Experience Lifecycle';
+		$scope.header = 'My UX Process';
 		
 	},
 };

@@ -16,12 +16,6 @@
 			padding: 15px;
 			transition: all 0.2s ease;
 		}
-		
-		&:hover {
-			div {
-				border-color: $melon;
-			}
-		}
 	}
 	
 	@include breakpoint($medium) {
