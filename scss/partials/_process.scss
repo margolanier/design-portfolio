@@ -1,18 +1,33 @@
 #process {
-	.stages {
-		display: flex;
-		justify-content: space-between;
+	
+	h3 {
+		text-align: center;
 	}
+	
 	.stage {
+		width: 100%;
 		
-		img.process-icon {
-		/*	border: 2px solid $grey;
+		div {
+			width: 80px;
+			height: 80px;
+			border: 2px solid $yellow;
+			margin: auto;
 			border-radius: 50%;
-			padding: 15px;*/
-			
-			&:hover {
-				background-color: $body-font-color;
+			padding: 15px;
+			transition: all 0.2s ease;
+		}
+		
+		&:hover {
+			div {
+				border-color: $melon;
 			}
 		}
 	}
+	
+	@include breakpoint($medium) {
+		.stages {
+			display: flex;
+		}
+	}
+	
 }

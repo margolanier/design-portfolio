@@ -1,9 +1,9 @@
 module.exports = {
-	name: 'Blogads',
+	name: 'Usability',
 	task($scope, App) {
 		
 		$scope.id = '03';
-		$scope.header = 'Blogads';
+		$scope.header = 'Usability Testing';
 		
 	},
 };

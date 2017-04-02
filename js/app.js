@@ -2,9 +2,9 @@ const app = angular.module('DesignPortfolio', []);
 
 const controllers = [
 	require ('./controllers/process'),
-	require ('./controllers/visual'),
-	require ('./controllers/bibliocache'),
-	require ('./controllers/blogads'),
+	require ('./controllers/strategy'),
+	require ('./controllers/work'),
+	require ('./controllers/usability'),
 ];
 
 for(let i=0; i<controllers.length; i++) {

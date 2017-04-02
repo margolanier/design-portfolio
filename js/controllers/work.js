@@ -1,9 +1,9 @@
 module.exports = {
-	name: 'Bibliocache',
+	name: 'Work',
 	task($scope, App) {
 
 		$scope.id = '02';
-		$scope.header = 'Bibliocache';
+		$scope.header = 'Design Samples';
 
 		$(document).on('ready', function () {
 			$(".portfolio").slick({

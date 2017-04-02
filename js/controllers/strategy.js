@@ -1,9 +1,9 @@
 module.exports = {
-	name: 'Visual',
+	name: 'Strategy',
 	task($scope, App) {
 		
 		$scope.id = '04';
-		$scope.header = 'Visual';
+		$scope.header = 'Winning Strategy';
 		
 	},
 };
